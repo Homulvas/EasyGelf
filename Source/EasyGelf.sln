@@ -1,13 +1,15 @@
 ﻿
 Microsoft Visual Studio Solution File, Format Version 12.00
-# Visual Studio 2012
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "EasyGelf.Log4Net", "EasyGelf.Log4Net\EasyGelf.Log4Net.csproj", "{5B64942E-7197-4781-909C-E6AA5813AE9D}"
+# Visual Studio 15
+VisualStudioVersion = 15.0.28307.329
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "EasyGelf.Log4Net", "EasyGelf.Log4Net\EasyGelf.Log4Net.csproj", "{5B64942E-7197-4781-909C-E6AA5813AE9D}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "EasyGelf.Core", "EasyGelf.Core\EasyGelf.Core.csproj", "{B928D694-5633-4F00-B70F-23F6E5F3A2DB}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "EasyGelf.Core.Fork", "EasyGelf.Core.Fork\EasyGelf.Core.Fork.csproj", "{B928D694-5633-4F00-B70F-23F6E5F3A2DB}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "EasyGelf.Tests", "EasyGelf.Tests\EasyGelf.Tests.csproj", "{8BF8DC5F-51A6-4381-8A75-7A7D79165C5D}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "EasyGelf.Tests", "EasyGelf.Tests\EasyGelf.Tests.csproj", "{8BF8DC5F-51A6-4381-8A75-7A7D79165C5D}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "EasyGelf.Log4Net.Example", "EasyGelf.Log4Net.Example\EasyGelf.Log4Net.Example.csproj", "{62185BAF-1DDB-44FC-BFA0-7DBA798437E2}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "EasyGelf.Log4Net.Example", "EasyGelf.Log4Net.Example\EasyGelf.Log4Net.Example.csproj", "{62185BAF-1DDB-44FC-BFA0-7DBA798437E2}"
 EndProject
 Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Solution Items", "Solution Items", "{477C842B-4BFA-40F6-BDC2-076C923DC317}"
 	ProjectSection(SolutionItems) = preProject
@@ -21,9 +23,9 @@ Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = ".nuget", ".nuget", "{B3D50C
 		.nuget\NuGet.targets = .nuget\NuGet.targets
 	EndProjectSection
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "EasyGelf.NLog", "EasyGelf.NLog\EasyGelf.NLog.csproj", "{A761D25B-60F1-49B4-A5CD-748B57C6513C}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "EasyGelf.NLog.Fork", "EasyGelf.NLog.Fork\EasyGelf.NLog.Fork.csproj", "{A761D25B-60F1-49B4-A5CD-748B57C6513C}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "EasyGelf.NLog.Example", "EasyGelf.NLog.Example\EasyGelf.NLog.Example.csproj", "{57F15F34-85CE-4333-B2E3-F9CC7641438C}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "EasyGelf.NLog.Example", "EasyGelf.NLog.Example\EasyGelf.NLog.Example.csproj", "{57F15F34-85CE-4333-B2E3-F9CC7641438C}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -58,5 +60,8 @@ Global
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {2A8B251E-4C4E-4E0A-AA22-DE4D45AFFA7D}
 	EndGlobalSection
 EndGlobal

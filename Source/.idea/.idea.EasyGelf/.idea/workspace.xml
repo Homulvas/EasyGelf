@@ -1,0 +1,478 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="ChangeListManager">
+    <list default="true" id="eb786c88-e0b6-4126-8700-e4f068c71243" name="Default Changelist" comment="">
+      <change beforePath="$PROJECT_DIR$/EasyGelf.Core/CoreExtentions.cs" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/EasyGelf.Core/EasyGelf.Core.csproj" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/EasyGelf.Core/Encoders/ChunkingEncoder.cs" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/EasyGelf.Core/Encoders/CompositeEncoder.cs" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/EasyGelf.Core/Encoders/GZipEncoder.cs" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/EasyGelf.Core/Encoders/IChunkedMessageIdGenerator.cs" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/EasyGelf.Core/Encoders/ITransportEncoder.cs" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/EasyGelf.Core/Encoders/MessageBasedIdGenerator.cs" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/EasyGelf.Core/GelfLevel.cs" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/EasyGelf.Core/GelfMessage.cs" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/EasyGelf.Core/GelfMessageBuilder.cs" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/EasyGelf.Core/GelfMessageSerializer.cs" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/EasyGelf.Core/ProcessHelpers.cs" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/EasyGelf.Core/Properties/AssemblyInfo.cs" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/EasyGelf.Core/SilentLogger.cs" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/EasyGelf.Core/SimpleJson.cs" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/EasyGelf.Core/Transports/Amqp/AmqpTransport.cs" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/EasyGelf.Core/Transports/Amqp/AmqpTransportConfiguration.cs" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/EasyGelf.Core/Transports/BufferedTransport.cs" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/EasyGelf.Core/Transports/CannotConnectException.cs" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/EasyGelf.Core/Transports/DisconnectedException.cs" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/EasyGelf.Core/Transports/Http/HttpTransport.cs" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/EasyGelf.Core/Transports/Http/HttpTransportConfiguration.cs" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/EasyGelf.Core/Transports/ITransport.cs" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/EasyGelf.Core/Transports/IpTransportConfiguration.cs" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/EasyGelf.Core/Transports/RetryingTransport.cs" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/EasyGelf.Core/Transports/SendFailedException.cs" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/EasyGelf.Core/Transports/Tcp/ITcpConnection.cs" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/EasyGelf.Core/Transports/Tcp/TcpConnection.cs" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/EasyGelf.Core/Transports/Tcp/TcpSslConnection.cs" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/EasyGelf.Core/Transports/Tcp/TcpTransport.cs" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/EasyGelf.Core/Transports/Tcp/TcpTransportConfiguration.cs" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/EasyGelf.Core/Transports/Tcp/TcpTransportFactory.cs" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/EasyGelf.Core/Transports/Udp/UdpTransport.cs" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/EasyGelf.Core/Transports/Udp/UdpTransportConfiguration.cs" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/EasyGelf.Core/packages.config" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/EasyGelf.Log4Net.Example/EasyGelf.Log4Net.Example.csproj" beforeDir="false" afterPath="$PROJECT_DIR$/EasyGelf.Log4Net.Example/EasyGelf.Log4Net.Example.csproj" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/EasyGelf.Log4Net.Example/Properties/AssemblyInfo.cs" beforeDir="false" afterPath="$PROJECT_DIR$/EasyGelf.Log4Net.Example/Properties/AssemblyInfo.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/EasyGelf.Log4Net.Example/packages.config" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/EasyGelf.Log4Net/EasyGelf.Log4Net.csproj" beforeDir="false" afterPath="$PROJECT_DIR$/EasyGelf.Log4Net/EasyGelf.Log4Net.csproj" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/EasyGelf.Log4Net/EasyGelf.Log4Net.nuspec" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/EasyGelf.Log4Net/GelfAmqpAppender.cs" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/EasyGelf.Log4Net/Properties/AssemblyInfo.cs" beforeDir="false" afterPath="$PROJECT_DIR$/EasyGelf.Log4Net/Properties/AssemblyInfo.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/EasyGelf.Log4Net/packages.config" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/EasyGelf.NLog.Example/EasyGelf.NLog.Example.csproj" beforeDir="false" afterPath="$PROJECT_DIR$/EasyGelf.NLog.Example/EasyGelf.NLog.Example.csproj" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/EasyGelf.NLog.Example/Properties/AssemblyInfo.cs" beforeDir="false" afterPath="$PROJECT_DIR$/EasyGelf.NLog.Example/Properties/AssemblyInfo.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/EasyGelf.NLog.Example/packages.config" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/EasyGelf.NLog/EasyGelf.NLog.csproj" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/EasyGelf.NLog/EasyGelf.NLog.nuspec" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/EasyGelf.NLog/GelfAmqpTarget.cs" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/EasyGelf.NLog/GelfHttpTarget.cs" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/EasyGelf.NLog/GelfTargetBase.cs" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/EasyGelf.NLog/GelfTcpTarget.cs" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/EasyGelf.NLog/GelfUdpTarget.cs" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/EasyGelf.NLog/Properties/AssemblyInfo.cs" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/EasyGelf.NLog/VerboseLogger.cs" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/EasyGelf.NLog/packages.config" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/EasyGelf.Tests/EasyGelf.Tests.csproj" beforeDir="false" afterPath="$PROJECT_DIR$/EasyGelf.Tests/EasyGelf.Tests.csproj" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/EasyGelf.Tests/Properties/AssemblyInfo.cs" beforeDir="false" afterPath="$PROJECT_DIR$/EasyGelf.Tests/Properties/AssemblyInfo.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/EasyGelf.Tests/packages.config" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/EasyGelf.sln" beforeDir="false" afterPath="$PROJECT_DIR$/EasyGelf.sln" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/EasyGelf.sln.DotSettings.user" beforeDir="false" afterPath="$PROJECT_DIR$/EasyGelf.sln.DotSettings.user" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Version.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Version.cs" afterDir="false" />
+    </list>
+    <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
+    <option name="SHOW_DIALOG" value="false" />
+    <option name="HIGHLIGHT_CONFLICTS" value="true" />
+    <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
+    <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+  <component name="FavoritesManager">
+    <favorites_list name="EasyGelf" />
+  </component>
+  <component name="FileEditorManager">
+    <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/EasyGelf.sln">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="553">
+              <caret line="36" column="84" selection-start-line="36" selection-start-column="84" selection-end-line="36" selection-end-column="84" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/EasyGelf.Tests/EasyGelf.Tests.csproj">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="480">
+              <caret line="30" column="52" selection-start-line="30" selection-start-column="52" selection-end-line="30" selection-end-column="52" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/EasyGelf.NLog.Example/EasyGelf.NLog.Example.csproj">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="416">
+              <caret line="26" column="47" selection-start-line="26" selection-start-column="43" selection-end-line="26" selection-end-column="47" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/EasyGelf.NLog.Fork/EasyGelf.NLog.Fork.csproj">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="672">
+              <caret line="42" column="10" selection-start-line="42" selection-start-column="10" selection-end-line="42" selection-end-column="10" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+    </leaf>
+  </component>
+  <component name="FindInProjectRecents">
+    <findStrings>
+      <find>fra</find>
+      <find>packages</find>
+      <find>packa</find>
+      <find>targets</find>
+      <find>vers</find>
+      <find>ver</find>
+      <find>40</find>
+      <find>configurat</find>
+      <find>rta</find>
+      <find>after</find>
+      <find>fork</find>
+      <find>AfterBuildMigrated</find>
+      <find>cp</find>
+      <find>fork.c</find>
+      <find>nlog</find>
+      <find>core</find>
+    </findStrings>
+  </component>
+  <component name="Git.Settings">
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$/.." />
+  </component>
+  <component name="HighlightingSettingsPerFile">
+    <setting file="file://$PROJECT_DIR$/EasyGelf.NLog.Example/EntryPoint.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/EasyGelf.Log4Net/Extentions.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/Version.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/EasyGelf.Log4Net/GelfUdpAppender.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/EasyGelf.Log4Net/GelfTcpAppender.cs" root0="FORCE_HIGHLIGHTING" />
+  </component>
+  <component name="IdeDocumentHistory">
+    <option name="CHANGED_PATHS">
+      <list>
+        <option value="$PROJECT_DIR$/EasyGelf.Log4Net/GelfUdpAppender.cs" />
+        <option value="$PROJECT_DIR$/EasyGelf.Core/Transports/Tcp/TcpSslConnection.cs" />
+        <option value="$PROJECT_DIR$/EasyGelf.Core/Transports/Tcp/TcpTransportConfiguration.cs" />
+        <option value="$PROJECT_DIR$/EasyGelf.NLog.Example/EntryPoint.cs" />
+        <option value="$PROJECT_DIR$/EasyGelf.NLog/GelfTcpTarget.cs" />
+        <option value="$PROJECT_DIR$/EasyGelf.Log4Net/GelfTcpAppender.cs" />
+        <option value="$PROJECT_DIR$/EasyGelf.NLog/packages.config" />
+        <option value="$PROJECT_DIR$/Version.cs" />
+        <option value="$PROJECT_DIR$/EasyGelf.Core/EasyGelf.Core.csproj" />
+        <option value="$PROJECT_DIR$/EasyGelf.NLog/EasyGelf.NLog.csproj" />
+        <option value="$PROJECT_DIR$/EasyGelf.NLog/EasyGelf.NLog.Fork.csproj" />
+        <option value="$PROJECT_DIR$/EasyGelf.sln" />
+        <option value="$PROJECT_DIR$/EasyGelf.Log4Net/EasyGelf.Log4Net.csproj" />
+        <option value="$PROJECT_DIR$/EasyGelf.Log4Net.Example/EasyGelf.Log4Net.Example.csproj" />
+        <option value="$PROJECT_DIR$/EasyGelf.NLog.Example/EasyGelf.NLog.Example.csproj" />
+        <option value="$PROJECT_DIR$/EasyGelf.Tests/EasyGelf.Tests.csproj" />
+        <option value="$PROJECT_DIR$/EasyGelf.NLog.Fork/EasyGelf.NLog.Fork.csproj" />
+      </list>
+    </option>
+  </component>
+  <component name="ProjectFrameBounds" extendedState="6">
+    <option name="x" value="-1085" />
+    <option name="y" value="-431" />
+    <option name="width" value="1089" />
+    <option name="height" value="1056" />
+  </component>
+  <component name="ProjectLevelVcsManager" settingsEditedManually="true" />
+  <component name="ProjectView">
+    <navigator currentView="SolutionExplorer" proportions="" version="1">
+      <foldersAlwaysOnTop value="true" />
+    </navigator>
+    <panes>
+      <pane id="AssemblyExplorer" />
+      <pane id="FileSystemExplorer" />
+      <pane id="SolutionExplorer">
+        <subPane>
+          <expand>
+            <path>
+              <item name="Project" type="784c90a0:SolutionExplorerRootNode" />
+              <item name="EasyGelf" type="24d0babc:SolutionExplorerModelNode" />
+            </path>
+            <path>
+              <item name="Project" type="784c90a0:SolutionExplorerRootNode" />
+              <item name="EasyGelf" type="24d0babc:SolutionExplorerModelNode" />
+              <item name="EasyGelf.Log4Net.Example" type="24d0babc:SolutionExplorerModelNode" />
+            </path>
+            <path>
+              <item name="Project" type="784c90a0:SolutionExplorerRootNode" />
+              <item name="EasyGelf" type="24d0babc:SolutionExplorerModelNode" />
+              <item name="EasyGelf.NLog.Fork" type="24d0babc:SolutionExplorerModelNode" />
+            </path>
+            <path>
+              <item name="Project" type="784c90a0:SolutionExplorerRootNode" />
+              <item name="EasyGelf" type="24d0babc:SolutionExplorerModelNode" />
+              <item name="EasyGelf.Tests" type="24d0babc:SolutionExplorerModelNode" />
+            </path>
+            <path>
+              <item name="Project" type="784c90a0:SolutionExplorerRootNode" />
+              <item name="Scratches and Consoles" type="1a2a3e82:ScratchProjectViewPane$MyProjectNode" />
+            </path>
+          </expand>
+          <select />
+        </subPane>
+        <option name="show-all-files" value="false" />
+      </pane>
+    </panes>
+  </component>
+  <component name="PropertiesComponent">
+    <property name="Rider.DefaultBreakpoints.AreToggled" value="true" />
+    <property name="Rider.ProjectViewActivator.IsNotFirstRun" value="true" />
+    <property name="WebServerToolWindowFactoryState" value="false" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/EasyGelf.NLog.Example/bin/Release/EasyGelf.NLog.Example.exe" />
+    <property name="nodejs_interpreter_path.stuck_in_default_project" value="undefined stuck path" />
+    <property name="nodejs_npm_path_reset_for_default_project" value="true" />
+    <property name="settings.editor.selected.configurable" value="RiderNuGetOptionsPageId" />
+  </component>
+  <component name="RunDashboard">
+    <option name="ruleStates">
+      <list>
+        <RuleState>
+          <option name="name" value="ConfigurationTypeDashboardGroupingRule" />
+        </RuleState>
+        <RuleState>
+          <option name="name" value="StatusDashboardGroupingRule" />
+        </RuleState>
+      </list>
+    </option>
+  </component>
+  <component name="RunManager">
+    <configuration name="Default" type="DotNetProject" factoryName=".NET Project">
+      <option name="EXE_PATH" value="$PROJECT_DIR$/EasyGelf.NLog.Example/bin/Release/EasyGelf.NLog.Example.exe" />
+      <option name="PROGRAM_PARAMETERS" value="" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/EasyGelf.Log4Net.Example/bin/Release" />
+      <option name="PASS_PARENT_ENVS" value="1" />
+      <option name="USE_EXTERNAL_CONSOLE" value="0" />
+      <option name="USE_MONO" value="0" />
+      <option name="RUNTIME_ARGUMENTS" value="" />
+      <option name="PROJECT_PATH" value="$PROJECT_DIR$/EasyGelf.Log4Net.Example/EasyGelf.Log4Net.Example.csproj" />
+      <option name="PROJECT_EXE_PATH_TRACKING" value="0" />
+      <option name="PROJECT_ARGUMENTS_TRACKING" value="1" />
+      <option name="PROJECT_WORKING_DIRECTORY_TRACKING" value="1" />
+      <option name="PROJECT_KIND" value="Console" />
+      <option name="PROJECT_TFM" value=".NETFramework,Version=v4.0" />
+      <method v="2">
+        <option name="Build" enabled="true" />
+      </method>
+    </configuration>
+  </component>
+  <component name="TaskManager">
+    <task active="true" id="Default" summary="Default task">
+      <changelist id="eb786c88-e0b6-4126-8700-e4f068c71243" name="Default Changelist" comment="" />
+      <created>1549358837240</created>
+      <option name="number" value="Default" />
+      <option name="presentableId" value="Default" />
+      <updated>1549358837240</updated>
+      <workItem from="1549358838876" duration="6354000" />
+      <workItem from="1549539397193" duration="22000" />
+      <workItem from="1549539498340" duration="7817000" />
+      <workItem from="1549612168761" duration="388000" />
+      <workItem from="1549612564342" duration="402000" />
+    </task>
+    <servers />
+  </component>
+  <component name="TimeTrackingManager">
+    <option name="totallyTimeSpent" value="14983000" />
+  </component>
+  <component name="TodoView">
+    <todo-panel id="selected-file">
+      <is-autoscroll-to-source value="true" />
+    </todo-panel>
+    <todo-panel id="all">
+      <are-packages-shown value="true" />
+      <is-autoscroll-to-source value="true" />
+    </todo-panel>
+  </component>
+  <component name="ToolWindowManager">
+    <frame x="-1088" y="-439" width="1096" height="1896" extended-state="6" />
+    <editor active="true" />
+    <layout>
+      <window_info id="Favorites" order="0" show_stripe_button="false" side_tool="true" />
+      <window_info id="Image Layers" order="1" />
+      <window_info id="Capture Tool" order="2" />
+      <window_info id="Structure" order="3" show_stripe_button="false" side_tool="true" weight="0.25" />
+      <window_info anchor="bottom" id="NuGet" order="0" sideWeight="0.60833335" weight="0.3295519" />
+      <window_info anchor="bottom" id="Docker" order="1" show_stripe_button="false" />
+      <window_info anchor="bottom" id="Version Control" order="2" />
+      <window_info anchor="bottom" id="Unit Tests" order="3" sideWeight="0.49537036" weight="0.3295519" />
+      <window_info anchor="bottom" id="Terminal" order="4" />
+      <window_info anchor="bottom" id="Event Log" order="5" sideWeight="0.12222222" side_tool="true" weight="0.3295519" />
+      <window_info anchor="bottom" id="Performance Profiler" order="6" />
+      <window_info anchor="bottom" id="Message" order="7" />
+      <window_info anchor="bottom" id="Find" order="8" sideWeight="0.49722221" weight="0.3295519" />
+      <window_info anchor="bottom" id="Run" order="9" sideWeight="0.49814814" weight="0.3295519" />
+      <window_info anchor="bottom" id="Debug" order="10" weight="0.4" />
+      <window_info anchor="bottom" id="Cvs" order="11" weight="0.25" />
+      <window_info anchor="bottom" id="Inspection" order="12" weight="0.4" />
+      <window_info anchor="bottom" id="TODO" order="13" />
+      <window_info anchor="bottom" content_ui="combo" id="Project" order="14" sideWeight="0.51296294" side_tool="true" visible="true" weight="0.3295519" />
+      <window_info active="true" anchor="bottom" id="Build" order="15" sideWeight="0.48703703" visible="true" weight="0.3295519" />
+      <window_info anchor="right" id="Commander" internal_type="SLIDING" order="0" type="SLIDING" weight="0.4" />
+      <window_info anchor="right" id="Ant Build" order="1" weight="0.25" />
+      <window_info anchor="right" content_ui="combo" id="Hierarchy" order="2" weight="0.25" />
+      <window_info anchor="right" id="Capture Analysis" order="3" />
+      <window_info anchor="right" id="Errors In Solution" order="4" show_stripe_button="false" />
+      <window_info anchor="right" id="Unit Tests Coverage" order="5" show_stripe_button="false" />
+    </layout>
+  </component>
+  <component name="TypeScriptGeneratedFilesManager">
+    <option name="version" value="1" />
+  </component>
+  <component name="XDebuggerManager">
+    <breakpoint-manager>
+      <breakpoints>
+        <breakpoint enabled="true" suspend="NONE" type="DotNet Exception Breakpoints">
+          <properties exception="System.Threading.ThreadAbortException" displayValue="System.Threading.ThreadAbortException" />
+          <option name="timeStamp" value="1" />
+        </breakpoint>
+      </breakpoints>
+    </breakpoint-manager>
+  </component>
+  <component name="editorHistoryManager">
+    <entry file="file://$PROJECT_DIR$/EasyGelf.NLog.Example/EntryPoint.cs">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="448">
+          <caret line="30" selection-start-line="30" selection-end-line="30" />
+          <folding>
+            <marker date="1549365115711" expanded="false" signature="6:49" ph="..." />
+            <marker date="1549365115711" expanded="true" signature="82:1014" ph="{...}" />
+            <marker date="1549365115711" expanded="true" signature="119:1012" ph="{...}" />
+            <marker date="1549365115711" expanded="true" signature="241:886" ph="{...}" />
+            <marker date="1549365115711" expanded="true" signature="485:876" ph="{...}" />
+            <marker date="1549365115711" expanded="true" signature="575:649" ph="{...}" />
+            <marker date="1549365115711" expanded="true" signature="686:788" ph="{...}" />
+            <marker date="1549365115711" expanded="true" signature="932:1006" ph="{...}" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/EasyGelf.NLog/GelfTcpTarget.cs" />
+    <entry file="file://$PROJECT_DIR$/EasyGelf.Log4Net/GelfUdpAppender.cs">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="192">
+          <caret line="34" column="1" selection-start-line="34" selection-start-column="1" selection-end-line="34" selection-end-column="1" />
+          <folding>
+            <marker date="1549358821766" expanded="false" signature="6:136" ph="..." />
+            <marker date="1549358821766" expanded="true" signature="164:1093" ph="{...}" />
+            <marker date="1549358821766" expanded="true" signature="225:1091" ph="{...}" />
+            <marker date="1549358821766" expanded="true" signature="264:407" ph="{...}" />
+            <marker date="1549358821766" expanded="true" signature="632:1085" ph="{...}" />
+            <marker date="1549358821766" expanded="true" signature="870:984" ph="{...}" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/EasyGelf.Core/Transports/Tcp/TcpConnection.cs" />
+    <entry file="file://$PROJECT_DIR$/EasyGelf.Core/Transports/Tcp/TcpTransport.cs" />
+    <entry file="file://$PROJECT_DIR$/EasyGelf.Core/Transports/Tcp/TcpTransportFactory.cs" />
+    <entry file="file://$PROJECT_DIR$/EasyGelf.Log4Net/GelfTcpAppender.cs">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="32">
+          <caret line="2" selection-start-line="2" selection-end-line="2" />
+          <folding>
+            <marker date="1549367094731" expanded="true" signature="6:125" ph="..." />
+            <marker date="1549367094731" expanded="true" signature="153:1310" ph="{...}" />
+            <marker date="1549367094731" expanded="true" signature="214:1308" ph="{...}" />
+            <marker date="1549367094731" expanded="true" signature="253:614" ph="{...}" />
+            <marker date="1549367094731" expanded="true" signature="927:1302" ph="{...}" />
+            <marker date="1549367094731" expanded="true" signature="1012:1227" ph="{...}" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/EasyGelf.Core/Transports/Tcp/TcpTransportConfiguration.cs" />
+    <entry file="file://$PROJECT_DIR$/EasyGelf.Core/Transports/Tcp/TcpSslConnection.cs" />
+    <entry file="file://$PROJECT_DIR$/EasyGelf.Log4Net/Extentions.cs">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="672">
+          <caret line="42" column="35" selection-start-line="42" selection-start-column="35" selection-end-line="42" selection-end-column="35" />
+          <folding>
+            <marker date="1549358821762" expanded="true" signature="6:40" ph="..." />
+            <marker date="1549358821762" expanded="true" signature="68:1236" ph="{...}" />
+            <marker date="1549358821762" expanded="true" signature="105:1234" ph="{...}" />
+            <marker date="1549358821762" expanded="true" signature="168:1228" ph="{...}" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/EasyGelf.Log4Net/packages.config" />
+    <entry file="file://$PROJECT_DIR$/EasyGelf.NLog/GelfHttpTarget.cs" />
+    <entry file="file://$PROJECT_DIR$/EasyGelf.NLog/GelfTargetBase.cs" />
+    <entry file="file://$PROJECT_DIR$/EasyGelf.NLog/GelfUdpTarget.cs" />
+    <entry file="file://$PROJECT_DIR$/EasyGelf.NLog/packages.config" />
+    <entry file="file://C:/Program Files (x86)/Microsoft Visual Studio/2017/Professional/MSBuild/15.0/Bin/Microsoft.Common.CurrentVersion.targets">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="682">
+          <caret line="1675" column="26" selection-start-line="1675" selection-start-column="26" selection-end-line="1675" selection-end-column="26" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/EasyGelf.Core/obj/Debug/net40/EasyGelf.Core.AssemblyInfo.cs" />
+    <entry file="file://C:/Program Files/dotnet/sdk/2.2.100/Sdks/Microsoft.NET.Sdk/targets/Microsoft.PackageDependencyResolution.targets">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="682">
+          <caret line="226" column="80" selection-start-line="226" selection-start-column="80" selection-end-line="226" selection-end-column="80" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/EasyGelf.Core/Transports/Amqp/AmqpTransport.cs" />
+    <entry file="file://$PROJECT_DIR$/EasyGelf.Log4Net/GelfAmqpAppender.cs" />
+    <entry file="file://$PROJECT_DIR$/EasyGelf.NLog/GelfAmqpTarget.cs" />
+    <entry file="file://$PROJECT_DIR$/EasyGelf.Core/EasyGelf.Core.csproj" />
+    <entry file="file://$PROJECT_DIR$/EasyGelf.NLog/EasyGelf.NLog.csproj" />
+    <entry file="file://$PROJECT_DIR$/Version.cs">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="16">
+          <caret line="2" selection-start-line="2" selection-end-line="2" />
+          <folding>
+            <marker date="1549552573514" expanded="false" signature="6:38" ph="..." />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/EasyGelf.NLog/VerboseLogger.cs" />
+    <entry file="file://$PROJECT_DIR$/EasyGelf.NLog/EasyGelf.NLog.Fork.csproj" />
+    <entry file="file://$PROJECT_DIR$/EasyGelf.Log4Net.Example/EasyGelf.Log4Net.Example.csproj">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="512">
+          <caret line="32" column="47" selection-start-line="32" selection-start-column="43" selection-end-line="32" selection-end-column="47" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/EasyGelf.Log4Net/EasyGelf.Log4Net.csproj">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="848">
+          <caret line="53" column="52" selection-start-line="53" selection-start-column="52" selection-end-line="53" selection-end-column="52" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/EasyGelf.sln">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="553">
+          <caret line="36" column="84" selection-start-line="36" selection-start-column="84" selection-end-line="36" selection-end-column="84" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/EasyGelf.Tests/EasyGelf.Tests.csproj">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="480">
+          <caret line="30" column="52" selection-start-line="30" selection-start-column="52" selection-end-line="30" selection-end-column="52" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/EasyGelf.NLog.Example/EasyGelf.NLog.Example.csproj">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="416">
+          <caret line="26" column="47" selection-start-line="26" selection-start-column="43" selection-end-line="26" selection-end-column="47" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/EasyGelf.NLog.Fork/EasyGelf.NLog.Fork.csproj">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="672">
+          <caret line="42" column="10" selection-start-line="42" selection-start-column="10" selection-end-line="42" selection-end-column="10" />
+        </state>
+      </provider>
+    </entry>
+  </component>
+</project>

@@ -14,11 +14,14 @@ namespace EasyGelf.NLog
         {
             TcpTransportConfiguration defaultCfg = TcpTransportConfiguration.GetDefaultConfiguration();
 
+            CertificatePath = defaultCfg.CertificatePath;
             RemoteAddress = defaultCfg.RemoteAddress;
             RemotePort = defaultCfg.RemotePort;
             Ssl = defaultCfg.Ssl;
             Timeout = defaultCfg.Timeout;
         }
+
+        public string CertificatePath { get; set; }
 
         public string RemoteAddress { get; set; }
 
@@ -32,6 +35,7 @@ namespace EasyGelf.NLog
         {
             var configuration = new TcpTransportConfiguration
             {
+                CertificatePath = CertificatePath,
                 RemoteAddress = RemoteAddress,
                 RemotePort = RemotePort,
                 Ssl = Ssl,

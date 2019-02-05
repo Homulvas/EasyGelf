@@ -2,17 +2,19 @@
   <PropertyGroup>
     <TargetFramework>netstandard2.0</TargetFramework>
     <SolutionDir Condition="$(SolutionDir) == '' Or $(SolutionDir) == '*Undefined*'">..\</SolutionDir>
-    <AssemblyTitle>EasyGelf.Log4Net</AssemblyTitle>
-    <Product>EasyGelf.Log4Net</Product>
-    <Description>GELF log4net appenders</Description>
-    <Copyright>Copyright Yury Pliner 2016</Copyright>
-    <BuildDependsOn>$(BuildDependsOn);AfterBuildMigrated</BuildDependsOn>
-    <Authors>Yury Pliner</Authors>
-    <PackageId>EasyGelf.Log4Net</PackageId>
+    <AssemblyTitle>EasyGelf.NLog</AssemblyTitle>
+    <Product>EasyGelf.NLog</Product>
+    <Description>GELF NLog targets</Description>
+    <Copyright>Copyright Yury Pliner 2015</Copyright>
+    <Authors>Yury Pliner, Ignas Kaziukėnas</Authors>
+    <PackageId>EasyGelf.NLog.Fork</PackageId>
     <PackageLicenseUrl>https://github.com/Pliner/EasyGelf/blob/master/license.txt</PackageLicenseUrl>
-    <PackageProjectUrl>https://github.com/Pliner/EasyGelf</PackageProjectUrl>
-    <PackageTags>GELF, log4net</PackageTags>
-    <AssemblyName>EasyGelf.Log4Net.Fork</AssemblyName>
+    <PackageProjectUrl>https://github.com/Homulvas/EasyGelf</PackageProjectUrl>
+    <PackageTags>GELF, NLog, TCP, SSL</PackageTags>
+    <PackageVersion>0.5.3.002</PackageVersion>
+    <GeneratePackageOnBuild>true</GeneratePackageOnBuild>
+    <AssemblyName>EasyGelf.NLog.Fork</AssemblyName>
+    <RootNamespace>EasyGelf.NLog.Fork</RootNamespace>
   </PropertyGroup>
   <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
     <DebugType>full</DebugType>
@@ -20,7 +22,7 @@
   </PropertyGroup>
   <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
     <DebugType>pdbonly</DebugType>
-    <OutputPath>..\..\Build\$(Configuration)\EasyGelf.Log4Net\</OutputPath>
+    <OutputPath>..\..\Build\$(Configuration)\EasyGelf.NLog\</OutputPath>
   </PropertyGroup>
   <Import Project="$(SolutionDir)\.nuget\NuGet.targets" Condition="Exists('$(SolutionDir)\.nuget\NuGet.targets')" />
   <Target Name="EnsureNuGetPackageBuildImports" BeforeTargets="PrepareForBuild">
@@ -30,22 +32,8 @@
     <Error Condition="!Exists('$(SolutionDir)\.nuget\NuGet.targets')" Text="$([System.String]::Format('$(ErrorText)', '$(SolutionDir)\.nuget\NuGet.targets'))" />
     <Error Condition="!Exists('..\packages\ILRepack.MSBuild.Task.1.0.9\build\ILRepack.MSBuild.Task.targets')" Text="$([System.String]::Format('$(ErrorText)', '..\packages\ILRepack.MSBuild.Task.1.0.9\build\ILRepack.MSBuild.Task.targets'))" />
   </Target>
-  <Target Name="AfterBuildMigrated" Condition="'$(Configuration)' == 'Release'">
-    <ItemGroup>
-      <InputAssemblies Include="$(OutputPath)\EasyGelf.Log4Net.dll" />
-      <InputAssemblies Include="$(OutputPath)\EasyGelf.Core.Fork.dll" />
-      <InputAssemblies Include="$(OutputPath)\RabbitMQ.Client.dll" />
-    </ItemGroup>
-    <ItemGroup>
-      <DoNotInternalizeAssemblies Include="EasyGelf.Core.Fork" />
-    </ItemGroup>
-    <ILRepack Parallel="true" Internalize="true" InternalizeExclude="@(DoNotInternalizeAssemblies)" InputAssemblies="@(InputAssemblies)" TargetKind="Dll" TargetPlatformVersion="v4" OutputFile="$(OutputPath)\EasyGelf.Log4Net.dll" />
-  </Target>
   <ItemGroup>
-    <PackageReference Include="ILRepack.MSBuild.Task" Version="1.0.9">
-      <PrivateAssets>all</PrivateAssets>
-    </PackageReference>
-    <PackageReference Include="log4net" Version="[2.0.3,]" />
+    <PackageReference Include="NLog.Web.AspNetCore" Version="4.8.0" />
   </ItemGroup>
   <ItemGroup>
     <Compile Include="..\Version.cs" Link="Properties\Version.cs" />

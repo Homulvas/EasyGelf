@@ -4,6 +4,8 @@ namespace EasyGelf.Core.Transports.Tcp
 {
     public sealed class TcpTransportConfiguration : IpTransportConfiguration
     {
+        public string CertificatePath { get; set; }
+        
         public bool Ssl { get; set; }
         
         public int Timeout { get; set; }
